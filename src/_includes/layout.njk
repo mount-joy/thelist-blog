@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+{% set css %}
+  {% include "./style/base.css" %}
+  {% if style %}
+    {% include "./style/" + style %}
+  {% endif %}
+{% endset %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thelist.app Blog | {{ pageTitle }}</title>
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+</head>
+
+<body>
+  <h1 class="title"><a href="/">thelist.app blog</a></h1>
+  <div class="page">
+    <h2>{{ pageTitle }}</h2>
+    <p><i>{{ description | markdown | safe }}</i></p>
+
+    <div class="content">
+      {{ content | safe }}
+    </div>
+  </div>
+</body>
+
+</html>

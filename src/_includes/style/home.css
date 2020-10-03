@@ -1,0 +1,41 @@
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  width: 360px;
+  height: 320px;
+  margin: 16px;
+}
+
+.blog-title {
+  margin: 4px 0;
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-description {
+  margin: 4px 0 2px 0;
+}
+
+.blog-title, .blog-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-date {
+  font-size: 8pt;
+  color: darkgray;
+  margin: 0;
+}
+
+.blog-image img {
+  object-fit: cover;
+  width: 360px;
+  height: 220px;
+}
