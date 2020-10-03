@@ -8,7 +8,7 @@ public_folder: /media/uploads
 collections:
   - name: posts
     label: Posts
-    folder: posts
+    folder: src/posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

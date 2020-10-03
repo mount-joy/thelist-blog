@@ -10,8 +10,7 @@ style: home.css
     <div class="blog-post">
       <a href="{{ post.url }}">
         <picture class="blog-image">
-          <source srcset="/media/{{ post.data.bannerImage }}.webp" type="image/webp">
-          <img src="/media/{{ post.data.bannerImage }}.jpg" alt="{{ post.data.description }}">
+          <img src="{{ post.data.bannerImage }}" alt="{{ post.data.description }}">
         </picture>
       </a>
       <p class="blog-description">{{ post.data.description }}</p>
