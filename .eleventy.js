@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('src/media');
   eleventyConfig.addPassthroughCopy('src/admin/config.yml');
+  eleventyConfig.addPassthroughCopy('src/admin/email_templates/');
 
   eleventyConfig.addFilter('markdown', function(value) {
     let markdown = require('markdown-it')({
