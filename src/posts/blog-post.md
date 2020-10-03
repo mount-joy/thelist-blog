@@ -1,5 +1,5 @@
 ---
-pageTitle: Deciding on a project
+title: Deciding on a project
 description: We have a team, now what?
 bannerImage: postit
 date: 2020-10-03
